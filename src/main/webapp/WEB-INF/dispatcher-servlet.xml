@@ -21,7 +21,7 @@
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://${[ticket-app-mysql]_SERVICE_HOST}:3306/{MYSQL_DATABASE}" />
+		<property name="url" value="jdbc:mysql://${[service_name]_SERVICE_HOST}:3306/{MYSQL_DATABASE}" />
 		<property name="username" value="${MYSQL_USER}" />
 		<property name="password" value="${MYSQL_PASSWORD}" />
 	</bean>
