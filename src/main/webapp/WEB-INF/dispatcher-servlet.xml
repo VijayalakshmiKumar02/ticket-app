@@ -21,9 +21,9 @@
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://ticket-app-mysql:3306/ticketdb" />
-		<property name="username" value="user" />
-		<property name="password" value="password" />
+		<property name="url" value="jdbc:mysql://${MYSQL_DB_HOST}:${OPENSHIFT_MYSQL_DB_PORT}/{OPENSHIFT_MYSQL_DB_DATABASE}" />
+		<property name="username" value="${OPENSHIFT_MYSQL_DB_USERNAME" />
+		<property name="password" value="${OPENSHIFT_MYSQL_DB_PASSWORD}" />
 	</bean>
 
 	<bean id="defaultSessionFactory"
