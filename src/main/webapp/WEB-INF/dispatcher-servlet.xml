@@ -22,8 +22,8 @@
 		destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url" value="jdbc:mysql://ticket-app-mysql:3306/ticketdb" />
-		<property name="username" value="user2mp" />
-		<property name="password" value="aW3YsqwH" />
+		<property name="username" value="user" />
+		<property name="password" value="password" />
 	</bean>
 
 	<bean id="defaultSessionFactory"
